@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machini Now - Soluções Tecnológicas</title>
+    <meta name="description" content="Transformamos negócios através da inovação tecnológica. Cloud Computing, Desenvolvimento, Cibersegurança e mais.">
+    <meta name="keywords" content="tecnologia, cloud computing, desenvolvimento de software, cibersegurança, business intelligence, consultoria IT, transformação digital">
+    <meta name="author" content="Machini Now">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://machininow.com.br">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://machininow.com.br/">
+    <meta property="og:title" content="Machini Now - Soluções Tecnológicas">
+    <meta property="og:description" content="Transformamos negócios através da inovação tecnológica. Cloud Computing, Desenvolvimento, Cibersegurança e mais.">
+    <meta property="og:image" content="https://machininow.com.br/assets/servidor.jpg">
+    <meta property="og:site_name" content="Machini Now">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://machininow.com.br/">
+    <meta property="twitter:title" content="Machini Now - Soluções Tecnológicas">
+    <meta property="twitter:description" content="Transformamos negócios através da inovação tecnológica. Cloud Computing, Desenvolvimento, Cibersegurança e mais.">
+    <meta property="twitter:image" content="https://machininow.com.br/assets/servidor.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Machini Now",
+        "alternateName": "Machini Now Soluções Tecnológicas",
+        "url": "https://machininow.com.br",
+        "logo": "https://machininow.com.br/favicon.svg",
+        "description": "Transformamos negócios através da inovação tecnológica. Cloud Computing, Desenvolvimento, Cibersegurança e mais.",
+        "foundingDate": "2020",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Paulista, 1000 - Bela Vista",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "postalCode": "01310-100",
+            "addressCountry": "BR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-11-3000-1234",
+            "contactType": "customer service",
+            "availableLanguage": ["Portuguese"]
+        },
+        "sameAs": [
+            "https://linkedin.com/company/machininow",
+            "https://instagram.com/machininow",
+            "https://twitter.com/machininow"
+        ],
+        "service": [
+            {
+                "@type": "Service",
+                "name": "Cloud Computing",
+                "description": "Migração e gestão de infraestrutura em nuvem com AWS, Azure e Google Cloud Platform."
+            },
+            {
+                "@type": "Service",
+                "name": "Desenvolvimento de Software",
+                "description": "Aplicações web e mobile personalizadas usando tecnologias modernas e metodologias ágeis."
+            },
+            {
+                "@type": "Service",
+                "name": "Cibersegurança",
+                "description": "Proteção avançada para seus dados e sistemas com soluções de segurança de última geração."
+            },
+            {
+                "@type": "Service",
+                "name": "Business Intelligence",
+                "description": "Transforme dados em insights estratégicos com dashboards e análises avançadas."
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon-simple.svg" sizes="16x16">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Inclui a folha de estilo CSS abaixo -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Indicador de progresso de scroll -->
+    <div class="scroll-indicator" id="scroll-indicator"></div>
+
+    <!-- O conteúdo principal da landing page, que pode conter imagens e textos adicionais para promover o produto ou serviço: -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span class="material-icons logo-material-icon">computer</span>
+                    </div>
+                    <div class="logo-text">
+                        <h2>Machini <span class="logo-accent">Now</span></h2>
+                        <span class="logo-tagline">Soluções Tecnológicas</span>
+                    </div>
+                </div>
+        <nav class="main-navigation" role="navigation">
+                    <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-navigation">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav-menu" id="main-navigation" role="menubar">
+                        <li role="none"><a href="#about" class="nav-link" role="menuitem">
+                            <span class="material-icons nav-icon" aria-hidden="true">info</span>
+                            <span>Sobre</span>
+                        </a></li>
+                        <li role="none"><a href="#pricing" class="nav-link" role="menuitem">
+                            <span class="material-icons nav-icon" aria-hidden="true">attach_money</span>
+                            <span>Preços</span>
+                        </a></li>
+                        <li role="none"><a href="#services" class="nav-link" role="menuitem">
+                            <span class="material-icons nav-icon" aria-hidden="true">build</span>
+                            <span>Serviços</span>
+                        </a></li>
+                        <li role="none"><a href="#contact" class="nav-link nav-cta" role="menuitem">
+                            <span class="material-icons nav-icon" aria-hidden="true">contact_phone</span>
+                            <span>Contato</span>
+                        </a></li>
+            </ul>
+        </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- A seção principal da landing page -->
+    <main class="site-content" role="main">
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                <h1>Transforme seu negócio com <span class="highlight">Tecnologia de ponta</span></h1>
+                        <p class="product-description">Somos especialistas em soluções tecnológicas que impulsionam o crescimento empresarial. Cloud Computing, Desenvolvimento de Software, Cibersegurança e Business Intelligence para levar sua empresa ao próximo nível.</p>
+
+                <!-- Botões para interação e navegação adicional: -->
+                        <div class="button-group">
+                <a href="#about" class="button button--primary">Sobre</a>
+                            <a href="#pricing" class="button button--secondary">Preços</a>
+                            <a href="#services" class="button button--outline">Serviços</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="floating-particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        <img src="assets/servidor.jpg" alt="Uma imagem representativa do produto ou serviço"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="section-about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre a Machini Now</h2>
+                    <p class="section-subtitle">Inovação tecnológica que transforma negócios</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Nossa História</h3>
+                        <p>Fundada em 2020, a Machini Now nasceu da visão de democratizar o acesso a soluções tecnológicas avançadas. Somos uma empresa especializada em transformação digital, oferecendo serviços que conectam inovação e resultados práticos.</p>
+                        
+                        <h3>Nossa Missão</h3>
+                        <p>Empoderar empresas através da tecnologia, oferecendo soluções personalizadas que impulsionam o crescimento e a eficiência operacional.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="material-icons stat-icon">business</span>
+                                <div class="stat-content">
+                                    <h4>500+</h4>
+                                    <p>Projetos Entregues</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <span class="material-icons stat-icon">group</span>
+                                <div class="stat-content">
+                                    <h4>50+</h4>
+                                    <p>Especialistas</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <span class="material-icons stat-icon">schedule</span>
+                                <div class="stat-content">
+                                    <h4>24/7</h4>
+                                    <p>Suporte Técnico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-values">
+                        <h3>Nossos Valores</h3>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <span class="material-icons">lightbulb</span>
+                                <h4>Inovação</h4>
+                                <p>Sempre na vanguarda das tecnologias emergentes</p>
+                            </div>
+                            <div class="value-item">
+                                <span class="material-icons">handshake</span>
+                                <h4>Parceria</h4>
+                                <p>Construímos relacionamentos duradouros com nossos clientes</p>
+                            </div>
+                            <div class="value-item">
+                                <span class="material-icons">verified</span>
+                                <h4>Qualidade</h4>
+                                <p>Excelência em cada projeto que desenvolvemos</p>
+                            </div>
+                            <div class="value-item">
+                                <span class="material-icons">speed</span>
+                                <h4>Agilidade</h4>
+                                <p>Entregamos soluções rápidas e eficientes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="services" class="section-services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <p class="section-subtitle">Soluções tecnológicas completas para seu negócio</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <span class="material-icons">cloud</span>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <p>Migração e gestão de infraestrutura em nuvem com AWS, Azure e Google Cloud Platform.</p>
+                        <ul class="service-features">
+                            <li>Migração segura para a nuvem</li>
+                            <li>Otimização de custos</li>
+                            <li>Backup automático</li>
+                            <li>Escalabilidade dinâmica</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Saiba Mais</a>
+                    </div>
+                    
+                    <div class="service-card featured">
+                        <div class="service-badge">Mais Popular</div>
+                        <div class="service-icon">
+                            <span class="material-icons">code</span>
+                        </div>
+                        <h3>Desenvolvimento de Software</h3>
+                        <p>Aplicações web e mobile personalizadas usando tecnologias modernas e metodologias ágeis.</p>
+                        <ul class="service-features">
+                            <li>Aplicações web responsivas</li>
+                            <li>Apps mobile nativas</li>
+                            <li>APIs e microserviços</li>
+                            <li>Metodologia ágil</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Saiba Mais</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <span class="material-icons">security</span>
+                        </div>
+                        <h3>Cibersegurança</h3>
+                        <p>Proteção avançada para seus dados e sistemas com soluções de segurança de última geração.</p>
+                        <ul class="service-features">
+                            <li>Auditoria de segurança</li>
+                            <li>Firewall avançado</li>
+                            <li>Monitoramento 24/7</li>
+                            <li>Compliance e certificações</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Saiba Mais</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <span class="material-icons">analytics</span>
+                        </div>
+                        <h3>Business Intelligence</h3>
+                        <p>Transforme dados em insights estratégicos com dashboards e análises avançadas.</p>
+                        <ul class="service-features">
+                            <li>Dashboards interativos</li>
+                            <li>Machine Learning</li>
+                            <li>Análise preditiva</li>
+                            <li>Data visualization</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Saiba Mais</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <span class="material-icons">support_agent</span>
+                        </div>
+                        <h3>Consultoria IT</h3>
+                        <p>Estratégias tecnológicas personalizadas para otimizar processos e aumentar produtividade.</p>
+                        <ul class="service-features">
+                            <li>Auditoria tecnológica</li>
+                            <li>Roadmap estratégico</li>
+                            <li>Otimização de processos</li>
+                            <li>Treinamento de equipes</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Saiba Mais</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <span class="material-icons">integration_instructions</span>
+                        </div>
+                        <h3>Integração de Sistemas</h3>
+                        <p>Conecte todas as suas ferramentas e sistemas para uma operação mais eficiente.</p>
+                        <ul class="service-features">
+                            <li>APIs customizadas</li>
+                            <li>Automação de processos</li>
+                            <li>Sincronização de dados</li>
+                            <li>Legacy system migration</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Preços -->
+        <section id="pricing" class="section-pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Planos e Preços</h2>
+                    <p class="section-subtitle">Escolha o plano ideal para seu negócio</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <p class="pricing-description">Ideal para pequenas empresas</p>
+                            <div class="pricing-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">2.500</span>
+                                <span class="period">/mês</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="material-icons">check</span> Consultoria básica</li>
+                            <li><span class="material-icons">check</span> Suporte via email</li>
+                            <li><span class="material-icons">check</span> 1 projeto por mês</li>
+                            <li><span class="material-icons">check</span> Backup semanal</li>
+                            <li><span class="material-icons">check</span> Dashboard básico</li>
+                        </ul>
+                        <a href="#contact" class="pricing-cta">Começar Agora</a>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Recomendado</div>
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <p class="pricing-description">Para empresas em crescimento</p>
+                            <div class="pricing-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">5.900</span>
+                                <span class="period">/mês</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="material-icons">check</span> Tudo do plano Starter</li>
+                            <li><span class="material-icons">check</span> Suporte 24/7</li>
+                            <li><span class="material-icons">check</span> 3 projetos por mês</li>
+                            <li><span class="material-icons">check</span> Backup diário</li>
+                            <li><span class="material-icons">check</span> Analytics avançado</li>
+                            <li><span class="material-icons">check</span> Integração de sistemas</li>
+                            <li><span class="material-icons">check</span> Consultoria estratégica</li>
+                        </ul>
+                        <a href="#contact" class="pricing-cta">Começar Agora</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <p class="pricing-description">Para grandes corporações</p>
+                            <div class="pricing-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">12.500</span>
+                                <span class="period">/mês</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="material-icons">check</span> Tudo do plano Professional</li>
+                            <li><span class="material-icons">check</span> Projetos ilimitados</li>
+                            <li><span class="material-icons">check</span> Gerente dedicado</li>
+                            <li><span class="material-icons">check</span> Backup em tempo real</li>
+                            <li><span class="material-icons">check</span> BI personalizado</li>
+                            <li><span class="material-icons">check</span> Treinamento de equipe</li>
+                            <li><span class="material-icons">check</span> SLA garantido</li>
+                        </ul>
+                        <a href="#contact" class="pricing-cta">Falar com Vendas</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-footer">
+                    <p><span class="material-icons">info</span> Todos os planos incluem período de teste gratuito de 30 dias</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="section-contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em Contato</h2>
+                    <p class="section-subtitle">Vamos conversar sobre como podemos ajudar seu negócio</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        
+                        <div class="contact-item">
+                            <span class="material-icons">location_on</span>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Av. Paulista, 1000 - Bela Vista<br>São Paulo, SP - 01310-100</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="material-icons">phone</span>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (11) 3000-1234</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="material-icons">email</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@machininow.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="material-icons">schedule</span>
+                            <div>
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda à Sexta: 8h às 18h<br>Sábado: 9h às 14h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Redes Sociais</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-link">
+                                    <span class="material-icons">share</span>
+                                    LinkedIn
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="material-icons">share</span>
+                                    Instagram
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="material-icons">share</span>
+                                    Twitter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Envie uma Mensagem</h3>
+                        <form class="contact-form-container">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nome Completo *</label>
+                                    <input type="text" id="name" name="name" required aria-describedby="name-error" placeholder="Seu nome completo">
+                                    <span class="form-error" id="name-error" role="alert"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Empresa</label>
+                                    <input type="text" id="company" name="company" placeholder="Nome da sua empresa">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required aria-describedby="email-error" placeholder="seu@email.com">
+                                    <span class="form-error" id="email-error" role="alert"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Serviço de Interesse</label>
+                                <select id="service" name="service">
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="cloud">Cloud Computing</option>
+                                    <option value="development">Desenvolvimento de Software</option>
+                                    <option value="security">Cibersegurança</option>
+                                    <option value="bi">Business Intelligence</option>
+                                    <option value="consulting">Consultoria IT</option>
+                                    <option value="integration">Integração de Sistemas</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <textarea id="message" name="message" rows="5" required aria-describedby="message-error" placeholder="Conte-nos sobre seu projeto ou necessidade..."></textarea>
+                                <span class="form-error" id="message-error" role="alert"></span>
+                            </div>
+                            
+                            <button type="submit" class="form-submit">
+                                <span class="material-icons">send</span>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Incluindo scripts adicionais se necessário -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span class="material-icons logo-material-icon">computer</span>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Machini <span class="logo-accent">Now</span></h3>
+                            <span class="logo-tagline">Soluções Tecnológicas</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Transformando negócios através da inovação tecnológica. 
+                        Sua parceira em soluções digitais desde 2020.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#services">Cloud Computing</a></li>
+                            <li><a href="#services">Desenvolvimento</a></li>
+                            <li><a href="#services">Cibersegurança</a></li>
+                            <li><a href="#services">Business Intelligence</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Sobre Nós</a></li>
+                            <li><a href="#pricing">Planos</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="#careers">Carreiras</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="material-icons">location_on</span>
+                                <span>São Paulo, SP</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="material-icons">phone</span>
+                                <span>+55 (88) 98233-6089</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="material-icons">email</span>
+                                <span>contato@machininow.com.br</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Machini Now. Todos os direitos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="#privacy">Política de Privacidade</a>
+                        <span>•</span>
+                        <a href="#terms">Termos de Uso</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-networks">
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        
+                        <a href="#" class="social-link github" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Configuração de Performance e Lazy Loading
+        document.addEventListener('DOMContentLoaded', function() {
+        // Menu mobile toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+            if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+                    mobileMenuToggle.setAttribute('aria-expanded', 
+                        mobileMenuToggle.classList.contains('active')
+                    );
+                });
+            }
+            
+            // Smooth scroll para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Header transparente e indicador de scroll
+            const header = document.querySelector('.site-header');
+            const scrollIndicator = document.getElementById('scroll-indicator');
+            let lastScrollY = window.scrollY;
+            
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollProgress = (currentScrollY / documentHeight) * 100;
+                
+                // Atualizar indicador de progresso
+                if (scrollIndicator) {
+                    scrollIndicator.style.width = `${scrollProgress}%`;
+                }
+                
+                // Header transparente
+                if (currentScrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.98)';
+                    header.style.backdropFilter = 'blur(20px)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                }
+                
+                lastScrollY = currentScrollY;
+            });
+            
+            // Animações de entrada
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observar elementos para animação
+            document.querySelectorAll('.service-card, .pricing-card, .value-item, .stat-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+            
+            // Validação e envio do formulário
+            const contactForm = document.querySelector('.contact-form-container');
+            if (contactForm) {
+                // Validação em tempo real
+                const inputs = contactForm.querySelectorAll('input, textarea');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', () => validateField(input));
+                    input.addEventListener('input', () => clearFieldError(input));
+                });
+                
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validar todos os campos
+                    let isValid = true;
+                    const nameField = this.querySelector('#name');
+                    const emailField = this.querySelector('#email');
+                    const messageField = this.querySelector('#message');
+                    
+                    if (!validateField(nameField)) isValid = false;
+                    if (!validateField(emailField)) isValid = false;
+                    if (!validateField(messageField)) isValid = false;
+                    
+                    if (!isValid) {
+                        showNotification('Por favor, corrija os erros no formulário.', 'error');
+                        return;
+                    }
+                    
+                    // Simular envio
+                    const submitBtn = this.querySelector('.form-submit');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = '<span class="material-icons">hourglass_empty</span> Enviando...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+                        this.reset();
+                        clearAllFieldErrors();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 2000);
+                });
+            }
+            
+            // Função para validar campo individual
+            function validateField(field) {
+                const value = field.value.trim();
+                const fieldType = field.type;
+                const isRequired = field.hasAttribute('required');
+                let isValid = true;
+                let errorMessage = '';
+                
+                // Limpar estado anterior
+                clearFieldError(field);
+                
+                if (isRequired && !value) {
+                    errorMessage = 'Este campo é obrigatório.';
+                    isValid = false;
+                } else if (fieldType === 'email' && value && !isValidEmail(value)) {
+                    errorMessage = 'Por favor, insira um email válido.';
+                    isValid = false;
+                } else if (field.id === 'name' && value && value.length < 2) {
+                    errorMessage = 'Nome deve ter pelo menos 2 caracteres.';
+                    isValid = false;
+                } else if (field.id === 'message' && value && value.length < 10) {
+                    errorMessage = 'Mensagem deve ter pelo menos 10 caracteres.';
+                    isValid = false;
+                }
+                
+                if (!isValid) {
+                    showFieldError(field, errorMessage);
+                } else if (value) {
+                    showFieldSuccess(field);
+                }
+                
+                return isValid;
+            }
+            
+            // Função para mostrar erro no campo
+            function showFieldError(field, message) {
+                field.classList.add('error');
+                field.classList.remove('success');
+                const errorElement = document.getElementById(field.getAttribute('aria-describedby'));
+                if (errorElement) {
+                    errorElement.textContent = message;
+                }
+            }
+            
+            // Função para mostrar sucesso no campo
+            function showFieldSuccess(field) {
+                field.classList.add('success');
+                field.classList.remove('error');
+                const errorElement = document.getElementById(field.getAttribute('aria-describedby'));
+                if (errorElement) {
+                    errorElement.textContent = '';
+                }
+            }
+            
+            // Função para limpar erro do campo
+            function clearFieldError(field) {
+                field.classList.remove('error', 'success');
+                const errorElement = document.getElementById(field.getAttribute('aria-describedby'));
+                if (errorElement) {
+                    errorElement.textContent = '';
+                }
+            }
+            
+            // Função para limpar todos os erros
+            function clearAllFieldErrors() {
+                const fields = document.querySelectorAll('.contact-form-container input, .contact-form-container textarea');
+                fields.forEach(clearFieldError);
+            }
+            
+            // Função para validar email
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+            
+            // Sistema de notificações
+            function showNotification(message, type = 'info') {
+                const notification = document.createElement('div');
+                notification.className = `notification notification--${type}`;
+                notification.innerHTML = `
+                    <span class="material-icons">${type === 'success' ? 'check_circle' : type === 'error' ? 'error' : 'info'}</span>
+                    <span>${message}</span>
+                    <button class="notification-close" onclick="this.parentElement.remove()">
+                        <span class="material-icons">close</span>
+                    </button>
+                `;
+                
+                document.body.appendChild(notification);
+                
+                // Auto-remover após 5 segundos
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.remove();
+                    }
+                }, 5000);
+            }
+            
+            // Contador animado para estatísticas
+            function animateCounter(element, target, duration = 2000) {
+                let start = 0;
+                const increment = target / (duration / 16);
+                
+                function updateCounter() {
+                    start += increment;
+                    if (start < target) {
+                        element.textContent = Math.ceil(start);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = target;
+                    }
+                }
+                updateCounter();
+            }
+            
+            // Animar contadores quando visíveis
+            const statObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target.querySelector('h4');
+                        const text = counter.textContent;
+                        const number = parseInt(text.replace(/\D/g, ''));
+                        
+                        if (number && !counter.dataset.animated) {
+                            counter.dataset.animated = 'true';
+                            counter.textContent = '0';
+                            animateCounter(counter, number);
+                            
+                            // Adicionar o sufixo de volta
+                            setTimeout(() => {
+                                counter.textContent = text;
+                            }, 2100);
+                        }
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            document.querySelectorAll('.stat-item').forEach(stat => {
+                statObserver.observe(stat);
+            });
+            
+            // Lazy loading para imagens
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            imageObserver.unobserve(img);
+                        }
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        });
+    </script>
+
+</body>
+</html>

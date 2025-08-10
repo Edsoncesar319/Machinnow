@@ -1,0 +1,21 @@
+{
+  "name": "Machini Now",
+  "short_name": "MachiniNow",
+  "description": "Soluções Tecnológicas Inovadoras",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "favicon-simple.svg",
+      "type": "image/svg+xml",
+      "sizes": "16x16"
+    }
+  ]
+}
